@@ -14,7 +14,7 @@ def read_file(filename):
 __author__ = 'Michiaki Ariga'
 
 setup(
-    name='tabula-py',
+    name='3stack-tabula',
     version='0.9.0',
     description='Simple wrapper for tabula, read tables from PDF into DataFrame',
     long_description=read_file('README.md'),
