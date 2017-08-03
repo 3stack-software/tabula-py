@@ -33,12 +33,5 @@ setup(
     packages=find_packages(),
     license='MIT License',
     keywords=['data frame', 'pdf', 'table'],
-    setup_requires=[
-        'flake8',
-    ],
-    install_requires=[
-        'pandas',
-        'numpy',
-        'requests',
-    ],
+    install_requires=[],
 )
