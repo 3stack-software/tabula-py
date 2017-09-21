@@ -74,7 +74,7 @@ def read_pdf(input_path, encoding='utf-8', java_options=None, options='', pages=
 
     options = build_options(options=options, pages=pages, guess=guess, area=area, lattice=lattice, stream=stream,
                             password=password, columns=columns, output_format=output_format, output_path=output_path,
-                            batch=batch, silent=False)
+                            batch=batch, silent=silent)
 
     args = ["java"] + java_options + ["-jar", JAR_PATH] + options + [input_path]
     output = subprocess.check_output(args)
