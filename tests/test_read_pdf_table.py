@@ -13,14 +13,14 @@ class TestReadPdfTable(unittest.TestCase):
     def test_read_pdf_into_json(self):
         pdf_path = 'tests/resources/data.pdf'
         expected_json = 'tests/resources/data_1.json'
-        json_data = tabula.read_pdf(pdf_path, guess=True, lattice=True)
+        json_data = tabula.read_pdf(pdf_path, guess=True, stream=True)
         self.assertTrue(isinstance(json_data, list))
         self.assertJsonEquals(expected_json, json_data)
 
     def test_read_pdf_with_java_option(self):
         pdf_path = 'tests/resources/data.pdf'
         expected_json = 'tests/resources/data_1.json'
-        json_data = tabula.read_pdf(pdf_path, guess=True, lattice=True, pages=1, java_options=['-Xmx256m'])
+        json_data = tabula.read_pdf(pdf_path, guess=True, stream=True, pages=1, java_options=['-Xmx256m'])
         self.assertTrue(isinstance(json_data, list))
         self.assertJsonEquals(expected_json, json_data)
 
