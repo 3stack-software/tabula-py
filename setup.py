@@ -15,7 +15,7 @@ __author__ = 'Michiaki Ariga'
 
 setup(
     name='3stack-tabula',
-    version='1.0.0',
+    version='1.0.4',
     description='Simple wrapper for tabula, read tables from PDF into DataFrame',
     long_description=read_file('README.md'),
     author=__author__,
