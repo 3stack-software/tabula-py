@@ -13,7 +13,7 @@ import os
 import shlex
 import subprocess
 
-JAR_NAME = "tabula-1.0.1-jar-with-dependencies.jar"
+JAR_NAME = "tabula-1.0.4-jar-with-dependencies.jar"
 JAR_DIR = os.path.abspath(os.path.dirname(__file__))
 JAR_PATH = os.path.join(JAR_DIR, JAR_NAME)
 
